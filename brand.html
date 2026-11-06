@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brand &amp; design palette — Deekshith Raj Basa</title>
+  <meta name="description" content="Logo, colour palette, typography and UI elements for Deekshith Raj Basa's personal brand.">
+  <meta name="theme-color" content="#1c52db">
+  <link rel="icon" href="favicon.ico" sizes="48x48">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script>
+    document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'light');
+  </script>
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <linearGradient id="brandGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3b67f0"/><stop offset="1" stop-color="#1742b4"/></linearGradient>
+      <symbol id="logo" viewBox="0 0 256 256"><path fill-rule="evenodd" d="M74 40H122A88 88 0 0 1 122 216H74A28 28 0 0 1 46 188V68A28 28 0 0 1 74 40ZM88 76L88 168L110 146L124 178L140 171L126 141L153 141Z"/></symbol>
+      <symbol id="wordmark" viewBox="0 0 308 160"><g transform="translate(-14 -10)"><path fill-rule="evenodd" d="M64 70A50 50 0 1 1 64 170A50 50 0 1 1 64 70ZM64 96A24 24 0 1 0 64 144A24 24 0 1 0 64 96Z"/><path d="M88 10H114V170H88Z"/><path d="M140 70H166V170H140Z"/><path d="M140 120A50 50 0 0 1 190 70H198V96H190A24 24 0 0 0 166 120Z"/><path fill-rule="evenodd" d="M272 70A50 50 0 1 1 272 170A50 50 0 1 1 272 70ZM272 96A24 24 0 1 0 272 144A24 24 0 1 0 272 96Z"/><path d="M222 10H248V170H222Z"/></g></symbol>
+    </defs>
+  </svg>
+
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="brand" aria-label="Back to portfolio">
+        <span class="brand__mark"><svg><use href="#logo"/></svg></span>
+        <svg class="brand__word" aria-hidden="true"><use href="#wordmark"/></svg>
+      </a>
+      <div class="nav__actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle colour theme">
+          <svg class="i-sun" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="i-moon" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+        <a class="btn btn--light btn--sm" href="index.html">← Portfolio</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Intro -->
+    <section class="hero bp-hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container bp-hero__grid">
+        <div class="bp-hero__copy">
+          <p class="eyebrow">Brand &amp; design palette</p>
+          <h1>The building blocks of <span class="hl">drb</span></h1>
+          <p class="lead">Logo, colours, type and UI elements used across Deekshith Raj Basa's portfolio. Click any colour to copy its hex code.</p>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#logo-section">Explore the logo</a>
+            <a class="btn btn--light" href="#colour">See the palette</a>
+          </div>
+        </div>
+
+        <!-- Monochrome logo composition -->
+        <div class="bp-mono" aria-hidden="true">
+          <svg class="bp-mono__ghost"><use href="#logo"/></svg>
+          <div class="bp-mono__card bp-mono__card--paper">
+            <svg class="bp-mono__mark"><use href="#logo"/></svg>
+            <svg class="bp-mono__word"><use href="#wordmark"/></svg>
+            <span class="bp-mono__label">On paper · #0B1222</span>
+          </div>
+          <div class="bp-mono__card bp-mono__card--ink">
+            <svg class="bp-mono__mark"><use href="#logo"/></svg>
+            <svg class="bp-mono__word"><use href="#wordmark"/></svg>
+            <span class="bp-mono__label">On ink · #FFFFFF</span>
+          </div>
+          <div class="bp-mono__chips">
+            <button data-hex="#0B1222" style="--c:#0b1222" title="Ink #0B1222"></button>
+            <button data-hex="#64748B" style="--c:#64748b" title="Slate #64748B"></button>
+            <button data-hex="#E2E8F0" style="--c:#e2e8f0" title="Mist #E2E8F0"></button>
+            <button data-hex="#FFFFFF" style="--c:#ffffff" title="Paper #FFFFFF"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Logo -->
+    <section class="section" id="logo-section">
+      <div class="container">
+        <header class="bp-head">
+          <p class="eyebrow">01 — Logo</p>
+          <h2>Pointer D + drb</h2>
+          <p>A rounded capital <strong>D</strong> whose counter is a <strong>mouse pointer</strong> — a letter first, an interface second. Paired with a lowercase <strong>drb</strong> wordmark built from one ring-and-stem system.</p>
+        </header>
+
+        <div class="bp-logos">
+          <figure class="bp-tile bp-tile--wide">
+            <div class="bp-stage">
+              <span class="bp-lockup"><svg class="bp-lockup__mark" fill="url(#brandGrad)"><use href="#logo"/></svg><svg class="bp-lockup__word"><use href="#wordmark"/></svg></span>
+            </div>
+            <figcaption><strong>Primary lockup</strong><a href="assets/brand/logo-horizontal.svg" download>SVG ↓</a></figcaption>
+          </figure>
+          <figure class="bp-tile bp-tile--wide">
+            <div class="bp-stage bp-stage--blue">
+              <span class="bp-lockup bp-lockup--white"><svg class="bp-lockup__mark"><use href="#logo"/></svg><svg class="bp-lockup__word"><use href="#wordmark"/></svg></span>
+            </div>
+            <figcaption><strong>Reversed lockup</strong><a href="assets/brand/logo-horizontal-white.svg" download>SVG ↓</a></figcaption>
+          </figure>
+          <figure class="bp-tile">
+            <div class="bp-stage"><svg class="bp-symbol" fill="url(#brandGrad)"><use href="#logo"/></svg></div>
+            <figcaption><strong>Symbol</strong><a href="assets/brand/logo.svg" download>SVG ↓</a></figcaption>
+          </figure>
+          <figure class="bp-tile">
+            <div class="bp-stage"><img class="bp-appicon" src="assets/brand/logo-tile.svg" alt="App icon"></div>
+            <figcaption><strong>App icon</strong><a href="assets/brand/icon-512.png" download>PNG ↓</a></figcaption>
+          </figure>
+          <figure class="bp-tile">
+            <div class="bp-stage bp-stage--navy"><svg class="bp-symbol" fill="#fff"><use href="#logo"/></svg></div>
+            <figcaption><strong>White</strong><a href="assets/brand/logo-white.svg" download>SVG ↓</a></figcaption>
+          </figure>
+          <figure class="bp-tile">
+            <div class="bp-stage"><svg class="bp-symbol" fill="#0f172a"><use href="#logo"/></svg></div>
+            <figcaption><strong>Black</strong><a href="assets/brand/logo-black.svg" download>SVG ↓</a></figcaption>
+          </figure>
+        </div>
+
+        <div class="bp-rules">
+          <div class="card">
+            <span class="ico ico--blue">↔</span>
+            <h3>Clear space</h3>
+            <p class="card__sub">Keep free space around the logo equal to the pointer's width on every side.</p>
+            <div class="bp-clear"><svg fill="url(#brandGrad)"><use href="#logo"/></svg></div>
+          </div>
+          <div class="card">
+            <span class="ico ico--green">◎</span>
+            <h3>Minimum size</h3>
+            <p class="card__sub">Symbol: 16 px (favicon). Lockup: 24 px tall. Below 24 px the pointer becomes a notch — that's expected.</p>
+            <div class="bp-sizes">
+              <svg style="width:64px;height:64px" fill="url(#brandGrad)"><use href="#logo"/></svg>
+              <svg style="width:32px;height:32px" fill="url(#brandGrad)"><use href="#logo"/></svg>
+              <svg style="width:24px;height:24px" fill="url(#brandGrad)"><use href="#logo"/></svg>
+              <svg style="width:16px;height:16px" fill="url(#brandGrad)"><use href="#logo"/></svg>
+            </div>
+          </div>
+          <div class="card">
+            <span class="ico ico--rose">✕</span>
+            <h3>Don't</h3>
+            <ul class="dots">
+              <li>Stretch, rotate or outline the mark</li>
+              <li>Recolour outside the brand palette</li>
+              <li>Add shadows or effects to the symbol</li>
+              <li>Place the blue mark on busy or blue backgrounds — use white</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Colour -->
+    <section class="section section--tint" id="colour">
+      <div class="container">
+        <header class="bp-head">
+          <p class="eyebrow">02 — Colour</p>
+          <h2>Royal blue on slate</h2>
+          <p>One confident blue carries the brand; slate neutrals do the quiet work; small accents tag information. Click a swatch to copy.</p>
+        </header>
+
+        <div class="bp-primary">
+          <button class="bp-hero-swatch" data-hex="#1C52DB" style="--c:#1c52db">
+            <span>Brand 600 · Primary</span>
+            <strong>#1C52DB</strong>
+            <small>RGB 28 82 219 · Buttons, links, highlights, stats band</small>
+          </button>
+          <button class="bp-hero-swatch bp-hero-swatch--dark" data-hex="#0B1222" style="--c:#0b1222">
+            <span>Ink 950 · Dark</span>
+            <strong>#0B1222</strong>
+            <small>RGB 11 18 34 · Footer, dark mode canvas</small>
+          </button>
+          <button class="bp-hero-swatch bp-hero-swatch--light" data-hex="#EDF1F9" style="--c:#edf1f9">
+            <span>Canvas · Light</span>
+            <strong>#EDF1F9</strong>
+            <small>RGB 237 241 249 · Section backgrounds</small>
+          </button>
+        </div>
+
+        <h3 class="bp-subhead">Brand blue scale</h3>
+        <div class="bp-scale" data-scale="brand"></div>
+
+        <h3 class="bp-subhead">Slate neutrals</h3>
+        <div class="bp-scale" data-scale="neutral"></div>
+
+        <h3 class="bp-subhead">Accents <span>— icon tiles &amp; tags only</span></h3>
+        <div class="bp-accents" data-scale="accent"></div>
+
+        <h3 class="bp-subhead">Brand gradient</h3>
+        <button class="bp-gradient" data-hex="linear-gradient(135deg, #3B67F0, #1742B4)">
+          <span>#3B67F0 → #1742B4 · 135°</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Typography -->
+    <section class="section" id="type">
+      <div class="container">
+        <header class="bp-head">
+          <p class="eyebrow">03 — Typography</p>
+          <h2>Plus Jakarta Sans</h2>
+          <p>A friendly geometric sans with tight, confident headlines. JetBrains Mono for code and small technical labels.</p>
+        </header>
+        <div class="bp-type">
+          <div class="card bp-specimen">
+            <p class="bp-aa">Aa</p>
+            <div>
+              <strong>Plus Jakarta Sans</strong>
+              <p class="card__sub">400 · 500 · 600 · 700 · 800 — Google Fonts</p>
+              <p class="bp-glyphs">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>0123456789 &amp; @ → ✓</p>
+            </div>
+          </div>
+          <div class="card bp-scale-type">
+            <div><span>Display · 800 · -4.5%</span><p style="font-size:2.6rem;font-weight:800;letter-spacing:-.045em;line-height:1.05">Pixel by pixel.</p></div>
+            <div><span>Heading · 800 · -4%</span><p style="font-size:1.75rem;font-weight:800;letter-spacing:-.04em">From internship to tech lead</p></div>
+            <div><span>Body · 400 · 16/1.6</span><p style="color:var(--text-2)">Unlocking the potential of user interfaces through elegant front-end engineering.</p></div>
+            <div><span>Eyebrow · 800 · +12% caps</span><p class="eyebrow" style="margin:0">Experience</p></div>
+            <div><span>Mono · JetBrains Mono 500</span><p style="font-family:'JetBrains Mono',monospace;font-size:.9rem">const lead = 'Deekshith';</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- UI -->
+    <section class="section section--tint" id="ui">
+      <div class="container">
+        <header class="bp-head">
+          <p class="eyebrow">04 — UI elements</p>
+          <h2>Components in the palette</h2>
+          <p>Rounded 12–24 px corners, soft slate shadows and tinted icon tiles — the same shapes the Pointer D is drawn with.</p>
+        </header>
+        <div class="bp-ui">
+          <div class="card">
+            <p class="profile__label">Buttons</p>
+            <div class="bp-row">
+              <a class="btn btn--primary" href="#ui">Primary <svg width="18" height="18" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+              <a class="btn btn--light" href="#ui">Secondary</a>
+            </div>
+          </div>
+          <div class="card">
+            <p class="profile__label">Tags</p>
+            <div class="bp-row">
+              <span class="tag tag--blue">Current</span><span class="tag tag--green">Shipped</span><span class="tag tag--amber">Internship</span><span class="tag tag--violet">1 yr 6 mos</span><span class="tag tag--rose">Risk</span><span class="tag">Neutral</span>
+            </div>
+          </div>
+          <div class="card">
+            <p class="profile__label">Icon tiles</p>
+            <div class="bp-row">
+              <span class="ico ico--blue">&lt;/&gt;</span><span class="ico ico--green">✓</span><span class="ico ico--violet">◆</span><span class="ico ico--amber">★</span><span class="ico ico--rose">♥</span><span class="ico ico--cyan">⚛</span>
+            </div>
+          </div>
+          <div class="card">
+            <p class="profile__label">Badge &amp; avatars</p>
+            <div class="bp-row">
+              <span class="badge"><span class="badge__tag">OPEN</span> Available</span>
+              <span class="av av--blue">DR</span><span class="av av--green">AB</span><span class="av av--violet">SS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="index.html" class="brand brand--light" aria-label="Back to portfolio">
+        <span class="brand__mark"><svg><use href="#logo"/></svg></span>
+        <svg class="brand__word" aria-hidden="true"><use href="#wordmark"/></svg>
+      </a>
+      <nav class="footer__links" aria-label="Footer"><a href="index.html">Portfolio</a><a href="#logo-section">Logo</a><a href="#colour">Colour</a><a href="#type">Type</a><a href="#ui">UI</a></nav>
+      <p class="footer__copy">© <span id="year">2026</span> Deekshith Raj Basa · Brand &amp; design palette</p>
+    </div>
+  </footer>
+
+  <div class="bp-toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    (function () {
+      var root = document.documentElement;
+      document.getElementById('themeToggle').addEventListener('click', function () {
+        var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        root.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+      });
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+      var palettes = {
+        brand: [['50', '#EEF3FF'], ['100', '#DBE5FE'], ['200', '#BFD1FE'], ['300', '#93B2FC'], ['400', '#6089F7'], ['500', '#3B67F0'],
+                ['600', '#1C52DB'], ['700', '#1742B4'], ['800', '#183892'], ['900', '#1A3373'], ['950', '#132046']],
+        neutral: [['50', '#F8FAFC'], ['100', '#F1F5F9'], ['200', '#E2E8F0'], ['300', '#CBD5E1'], ['400', '#94A3B8'], ['500', '#64748B'],
+                  ['600', '#475569'], ['700', '#334155'], ['800', '#1E293B'], ['900', '#0F172A'], ['950', '#0B1222']],
+        accent: [['Green', '#10B981', '#ECFDF5'], ['Amber', '#F59E0B', '#FFFBEB'], ['Violet', '#8B5CF6', '#F5F3FF'],
+                 ['Rose', '#F43F5E', '#FFF1F2'], ['Cyan', '#0891B2', '#ECFEFF']]
+      };
+      function lum(hex) {
+        var n = parseInt(hex.slice(1), 16);
+        return (0.299 * (n >> 16) + 0.587 * (n >> 8 & 255) + 0.114 * (n & 255)) / 255;
+      }
+      document.querySelectorAll('[data-scale]').forEach(function (el) {
+        var key = el.getAttribute('data-scale');
+        palettes[key].forEach(function (p) {
+          var b = document.createElement('button');
+          b.setAttribute('data-hex', p[1]);
+          if (key === 'accent') {
+            b.className = 'bp-accent';
+            b.innerHTML = '<span class="bp-accent__chip" style="background:' + p[1] + '"></span>' +
+              '<span class="bp-accent__soft" style="background:' + p[2] + '"></span>' +
+              '<strong>' + p[0] + '</strong><small>' + p[1] + ' · ' + p[2] + '</small>';
+          } else {
+            b.className = 'bp-swatch' + (lum(p[1]) < 0.55 ? ' is-dark' : '');
+            b.style.background = p[1];
+            b.innerHTML = '<span>' + p[0] + '</span><small>' + p[1] + '</small>';
+          }
+          el.appendChild(b);
+        });
+      });
+
+      var toast = document.getElementById('toast'), timer;
+      document.addEventListener('click', function (e) {
+        var t = e.target.closest('[data-hex]');
+        if (!t) return;
+        var val = t.getAttribute('data-hex');
+        (navigator.clipboard ? navigator.clipboard.writeText(val) : Promise.reject()).then(function () {
+          toast.textContent = 'Copied ' + val;
+        }, function () { toast.textContent = val; });
+        toast.classList.add('is-on');
+        clearTimeout(timer);
+        timer = setTimeout(function () { toast.classList.remove('is-on'); }, 1600);
+      });
+    })();
+  </script>
+</body>
+</html>

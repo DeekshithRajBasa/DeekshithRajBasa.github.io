@@ -1,3 +1,28 @@
-After a span of five years, the highly anticipated new portfolio is released. This revamped version incorporates several notable technologies such as Angular, Tailwind CSS, and Lottie animations. These technologies enhance the functionality, design, and visual appeal of the portfolio. 
+# deekshithrajbasa.github.io
 
-However, in its current state, the portfolio's beta version is specifically designed to work on desktop devices. It may not provide an optimized experience on mobile or other platforms yet. The focus during the development phase has been on perfecting the desktop version before expanding its compatibility to other devices. This approach ensures that the portfolio delivers an exceptional user experience on desktop platforms while laying the foundation for future adaptations to different screen sizes and devices.
+Personal portfolio of **Deekshith Raj Basa** — Senior Software Engineer (Frontend).
+
+Live: https://deekshithrajbasa.github.io/
+
+## Stack
+
+A dependency-free static site — no build step:
+
+- `index.html` — all content (experience, skills, education, certifications, testimonials, contact)
+- `assets/css/main.css` — design system (light-first blue/slate theme with dark mode, responsive layout, animations)
+- `assets/js/main.js` — theme toggle, mobile menu, scroll reveal, Formspree contact form
+
+Fully responsive (mobile, tablet, desktop), respects `prefers-color-scheme` and `prefers-reduced-motion`.
+
+## Updating content
+
+Edit `index.html` directly — each experience entry is an `<li class="job">`,
+each certification an `<li>` in `.cert-list`, each testimonial a `<figure class="quote">`.
+Push to `master` and GitHub Pages deploys automatically.
+
+## Brand
+
+**Pointer D** symbol (a rounded capital D whose counter is a mouse pointer) + **drb** lowercase wordmark.
+Files in `assets/brand/`: `logo.svg` (blue gradient), `logo-black.svg`, `logo-white.svg`, `logo-tile.svg` (app icon),
+`wordmark.svg`, `logo-horizontal.svg` / `logo-horizontal-white.svg` (lockups), plus `favicon.ico`, `favicon.svg`,
+`apple-touch-icon.png` and 192/512 px icons. Brand blue: `#1c52db` (gradient `#3b67f0` → `#1742b4`), font: Plus Jakarta Sans.

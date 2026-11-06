@@ -1,25 +1,412 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
   <meta charset="utf-8">
-  <title>Portfolio</title>
-  <base href="./">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Deekshith Raj Basa — Associate Tech Lead · Frontend</title>
+  <meta name="description" content="Deekshith Raj Basa — Associate Tech Lead specialising in frontend development with Angular, TypeScript and modern web tooling. Based in Hyderabad, India.">
+  <meta property="og:title" content="Deekshith Raj Basa — Associate Tech Lead · Frontend">
+  <meta property="og:description" content="Unlocking the potential of user interfaces through elegant front-end engineering.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://deekshithrajbasa.github.io/">
+  <meta property="og:image" content="https://deekshithrajbasa.github.io/assets/brand/icon-512.png">
+  <meta name="theme-color" content="#1c52db">
+  <link rel="icon" href="favicon.ico" sizes="48x48">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <style type="text/css">@font-face{font-family:'Inter';font-style:normal;font-weight:100;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:'Inter';font-style:normal;font-weight:100;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}@font-face{font-family:'Inter';font-style:normal;font-weight:100;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2) format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Inter';font-style:normal;font-weight:100;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2) format('woff2');unicode-range:U+0370-03FF;}@font-face{font-family:'Inter';font-style:normal;font-weight:100;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'Inter';font-style:normal;font-weight:100;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2) format('woff2');unicode-range:U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Inter';font-style:normal;font-weight:100;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'Inter';font-style:normal;font-weight:200;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:'Inter';font-style:normal;font-weight:200;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}@font-face{font-family:'Inter';font-style:normal;font-weight:200;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2) format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Inter';font-style:normal;font-weight:200;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2) format('woff2');unicode-range:U+0370-03FF;}@font-face{font-family:'Inter';font-style:normal;font-weight:200;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'Inter';font-style:normal;font-weight:200;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2) format('woff2');unicode-range:U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Inter';font-style:normal;font-weight:200;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'Inter';font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:'Inter';font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}@font-face{font-family:'Inter';font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2) format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Inter';font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2) format('woff2');unicode-range:U+0370-03FF;}@font-face{font-family:'Inter';font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'Inter';font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2) format('woff2');unicode-range:U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Inter';font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2) format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2) format('woff2');unicode-range:U+0370-03FF;}@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2) format('woff2');unicode-range:U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'Inter';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:'Inter';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}@font-face{font-family:'Inter';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2) format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Inter';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2) format('woff2');unicode-range:U+0370-03FF;}@font-face{font-family:'Inter';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'Inter';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2) format('woff2');unicode-range:U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Inter';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'Inter';font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:'Inter';font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}@font-face{font-family:'Inter';font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2) format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Inter';font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2) format('woff2');unicode-range:U+0370-03FF;}@font-face{font-family:'Inter';font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'Inter';font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2) format('woff2');unicode-range:U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Inter';font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'Inter';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:'Inter';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}@font-face{font-family:'Inter';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2) format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Inter';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2) format('woff2');unicode-range:U+0370-03FF;}@font-face{font-family:'Inter';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'Inter';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2) format('woff2');unicode-range:U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Inter';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'Inter';font-style:normal;font-weight:800;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:'Inter';font-style:normal;font-weight:800;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}@font-face{font-family:'Inter';font-style:normal;font-weight:800;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2) format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Inter';font-style:normal;font-weight:800;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2) format('woff2');unicode-range:U+0370-03FF;}@font-face{font-family:'Inter';font-style:normal;font-weight:800;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'Inter';font-style:normal;font-weight:800;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2) format('woff2');unicode-range:U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Inter';font-style:normal;font-weight:800;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'Inter';font-style:normal;font-weight:900;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:'Inter';font-style:normal;font-weight:900;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}@font-face{font-family:'Inter';font-style:normal;font-weight:900;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2) format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Inter';font-style:normal;font-weight:900;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2) format('woff2');unicode-range:U+0370-03FF;}@font-face{font-family:'Inter';font-style:normal;font-weight:900;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'Inter';font-style:normal;font-weight:900;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2) format('woff2');unicode-range:U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Inter';font-style:normal;font-weight:900;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'Nothing You Could Do';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/nothingyoucoulddo/v15/oY1B8fbBpaP5OX3DtrRYf_Q2BPB1SnfZb3OOnVsH2pmp.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}</style>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
   <script>
-    window.mobileCheck = function () {
-      let check = false;
-      (function (a) { if (/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(a) || /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0, 4))) check = true; })(navigator.userAgent || navigator.vendor || window.opera);
-      return check;
-    };
+    (function () {
+      var t = localStorage.getItem('theme') || 'light';
+      document.documentElement.setAttribute('data-theme', t);
+      document.documentElement.classList.add('js');
+      // Old Angular hash routes (#/home, #/splash) → top of page.
+      if (location.hash.indexOf('#/') === 0) history.replaceState(null, '', location.pathname);
+    })();
   </script>
-<style>@import"https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap";*,:before,:after{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}:before,:after{--tw-content:""}html{line-height:1.5;-webkit-text-size-adjust:100%;tab-size:4;font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal}body{margin:0;line-height:inherit}*,:before,:after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / .5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }*{font-family:Inter,sans-serif!important;--tw-text-opacity:1;color:rgb(30 41 59 / var(--tw-text-opacity))}</style><link rel="stylesheet" href="styles.93a4669a651d6dc6.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.93a4669a651d6dc6.css"></noscript></head>
-
+</head>
 <body>
-  <app-root></app-root>
-<script src="runtime.f8e12f718094ceec.js" type="module"></script><script src="polyfills.8629f13653a7f494.js" type="module"></script><script src="main.b8c8d322fe816f87.js" type="module"></script>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="logo" viewBox="0 0 256 256"><path fill-rule="evenodd" d="M74 40H122A88 88 0 0 1 122 216H74A28 28 0 0 1 46 188V68A28 28 0 0 1 74 40ZM88 76L88 168L110 146L124 178L140 171L126 141L153 141Z"/></symbol>
+      <symbol id="wordmark" viewBox="0 0 308 160"><g transform="translate(-14 -10)"><path fill-rule="evenodd" d="M64 70A50 50 0 1 1 64 170A50 50 0 1 1 64 70ZM64 96A24 24 0 1 0 64 144A24 24 0 1 0 64 96Z"/><path d="M88 10H114V170H88Z"/><path d="M140 70H166V170H140Z"/><path d="M140 120A50 50 0 0 1 190 70H198V96H190A24 24 0 0 0 166 120Z"/><path fill-rule="evenodd" d="M272 70A50 50 0 1 1 272 170A50 50 0 1 1 272 70ZM272 96A24 24 0 1 0 272 144A24 24 0 1 0 272 96Z"/><path d="M222 10H248V170H222Z"/></g></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.2 4.2L19 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    </defs>
+  </svg>
 
-</body></html>
+  <!-- ================= NAV ================= -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#top" class="brand" aria-label="Deekshith Raj Basa — home">
+        <span class="brand__mark"><svg><use href="#logo"/></svg></span>
+        <svg class="brand__word" aria-hidden="true"><use href="#wordmark"/></svg>
+      </a>
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="#work">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact" class="nav__mobile-cta">Get in touch</a>
+      </nav>
+      <div class="nav__actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle colour theme">
+          <svg class="i-sun" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="i-moon" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+        <a class="btn btn--light btn--sm hide-sm" href="https://www.linkedin.com/in/deekshith-raj-basa/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn--primary btn--sm hide-sm" href="#contact">Hire me</a>
+        <button class="icon-btn menu-btn" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <a class="badge reveal" href="#contact"><span class="badge__tag">OPEN</span> Open to tech lead &amp; senior frontend roles</a>
+          <h1 class="reveal">I turn ideas &amp; prototypes into <span class="hl">superheroes</span>, pixel by pixel.</h1>
+          <p class="lead reveal">
+            I'm <strong>Deekshith Raj Basa</strong>, an Associate Tech Lead specialising in frontend development.
+            Unlocking the potential of user interfaces through elegant front-end engineering — with Angular,
+            TypeScript and a strong eye for UI.
+          </p>
+          <div class="hero__cta reveal">
+            <a class="btn btn--primary" href="#contact">Hire me for a job <svg width="18" height="18"><use href="#i-arrow"/></svg></a>
+            <a class="btn btn--light" href="#work">View experience</a>
+          </div>
+          <ul class="checks reveal">
+            <li><svg width="16" height="16"><use href="#i-check"/></svg><span><span class="js-years">7</span>+ years experience</span></li>
+            <li><svg width="16" height="16"><use href="#i-check"/></svg>Angular specialist</li>
+            <li><svg width="16" height="16"><use href="#i-check"/></svg>Hyderabad, India</li>
+          </ul>
+        </div>
+
+        <!-- Profile card + career ladder -->
+        <div class="hero__visual reveal" aria-hidden="true">
+          <div class="profile">
+            <div class="profile__banner">
+              <span class="profile__chip"><span class="pulse"></span>Leading frontend</span>
+            </div>
+            <div class="profile__body">
+              <div class="profile__id">
+                <span class="profile__avatar"><svg><use href="#logo"/></svg></span>
+                <div>
+                  <strong class="profile__name">Deekshith Raj Basa
+                    <svg class="profile__verified" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 1l2.6 2.2 3.4-.4.9 3.3 3 1.7-1.2 3.2 1.2 3.2-3 1.7-.9 3.3-3.4-.4L12 23l-2.6-2.2-3.4.4-.9-3.3-3-1.7L3.3 13 2.1 9.8l3-1.7.9-3.3 3.4.4z"/><path d="M8 12.3l2.7 2.7L16.2 9.5" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </strong>
+                  <span class="profile__role">Associate Tech Lead · <b>eReInsure</b></span>
+                  <span class="profile__loc">Hyderabad, India</span>
+                </div>
+              </div>
+
+              <div class="profile__stats">
+                <div><strong><span class="js-years">7</span>+</strong><span>Years</span></div>
+                <div><strong>4</strong><span>Companies</span></div>
+                <div><strong>8+</strong><span>Referrals</span></div>
+              </div>
+
+              <p class="profile__label">Core stack</p>
+              <ul class="stack">
+                <li title="Angular"><img src="https://cdn.simpleicons.org/angular/dd0031" alt="" loading="lazy">Angular</li>
+                <li title="TypeScript"><img src="https://cdn.simpleicons.org/typescript/3178c6" alt="" loading="lazy">TypeScript</li>
+                <li title="RxJS"><img src="https://cdn.simpleicons.org/reactivex/b7178c" alt="" loading="lazy">RxJS</li>
+                <li title="NgRx"><img src="https://cdn.simpleicons.org/ngrx/ba2bd2" alt="" loading="lazy">NgRx</li>
+                <li title="Nx"><img src="https://cdn.simpleicons.org/nx/143055" alt="" loading="lazy">Nx</li>
+                <li title="Tailwind CSS"><img src="https://cdn.simpleicons.org/tailwindcss/06b6d4" alt="" loading="lazy">Tailwind</li>
+              </ul>
+
+              <p class="profile__label profile__label--gap">Career growth</p>
+              <ol class="steps">
+                <li><span></span><b>Intern</b><small>2019</small></li>
+                <li><span></span><b>UI Dev</b><small>2019</small></li>
+                <li><span></span><b>Sr FE</b><small>2021</small></li>
+                <li><span></span><b>Sr SWE</b><small>2022</small></li>
+                <li class="is-now"><span></span><b>Tech Lead</b><small>Now</small></li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="float float--b">
+            <span class="float__stars">★★★★★</span>
+            <div><strong>8+ recommendations</strong><small>From managers &amp; peers</small></div>
+          </div>
+
+          <div class="float float--a">
+            <span class="float__icon">★</span>
+            <div><strong>Associate Tech Lead</strong><small>Now leading at eReInsure</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= STATS BAND ================= -->
+    <section class="band" aria-label="Highlights">
+      <div class="container band__grid">
+        <div class="reveal"><strong><span class="js-years">7</span>+</strong><span>Years building production front ends with Angular</span></div>
+        <div class="reveal"><strong>4</strong><span>Companies, from internship to associate tech lead</span></div>
+        <div class="reveal"><strong>8+</strong><span>Recommendations from managers &amp; peers on LinkedIn</span></div>
+        <div class="reveal"><strong>5</strong><span>Certifications across React, JavaScript &amp; security</span></div>
+      </div>
+    </section>
+
+    <!-- ================= LOGOS ================= -->
+    <section class="logos container reveal" aria-label="Companies worked with">
+      <p>Trusted by teams at</p>
+      <div class="logos__row">
+        <img src="./assets/images/ereinsure.png" alt="eReInsure" loading="lazy">
+        <img src="./assets/images/open.png" alt="Open Financial Technologies" loading="lazy">
+        <img src="./assets/images/techolution.png" alt="Techolution" loading="lazy">
+        <img src="./assets/images/virtusa.png" alt="Virtusa" loading="lazy">
+      </div>
+    </section>
+
+    <!-- ================= EXPERIENCE ================= -->
+    <section class="section section--tint" id="work">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Experience</p>
+          <h2>From first internship to tech lead</h2>
+          <p>Frontend ownership across insurance, fintech and banking products — often single-handedly, always end to end.</p>
+        </header>
+
+        <ol class="timeline">
+          <li class="job reveal">
+            <div class="job__logo"><img src="./assets/images/ereinsure.png" alt="eReInsure" loading="lazy"></div>
+            <div class="job__main">
+              <div class="job__top">
+                <h3>Associate Tech Lead</h3>
+                <span class="tag tag--blue"><span class="pulse"></span>Current</span>
+              </div>
+              <p class="job__co">eReInsure · Full-time</p>
+              <p class="job__meta">Nov 2022 — Present · Hyderabad, Telangana, India</p>
+              <ol class="roles">
+                <li class="is-now"><strong>Associate Tech Lead</strong><span>Current role</span></li>
+                <li><strong>Senior Software Engineer</strong><span>Joined Nov 2022</span></li>
+              </ol>
+              <ul class="chips"><li>Angular</li><li>Form.io</li><li>No-code</li><li>Monorepo</li><li>NgRx</li><li>RxJS</li><li>Angular Material</li></ul>
+            </div>
+          </li>
+          <li class="job reveal">
+            <div class="job__logo"><img src="./assets/images/open.png" alt="Open Financial Technologies" loading="lazy"></div>
+            <div class="job__main">
+              <div class="job__top">
+                <h3>Senior Frontend Engineer</h3>
+                <span class="tag">1 yr 9 mos</span>
+              </div>
+              <p class="job__co">Open Financial Technologies · Full-time</p>
+              <p class="job__meta">Apr 2021 — Nov 2022 · Bengaluru, Karnataka, India</p>
+              <ul class="chips"><li>Angular</li><li>TypeScript</li><li>Nx</li><li>Tailwind CSS</li><li>Angular Material</li><li>JavaScript</li></ul>
+            </div>
+          </li>
+          <li class="job reveal">
+            <div class="job__logo"><img src="./assets/images/techolution.png" alt="Techolution" loading="lazy"></div>
+            <div class="job__main">
+              <div class="job__top">
+                <h3>Associate UI Developer</h3>
+                <span class="tag">1 yr 6 mos</span>
+              </div>
+              <p class="job__co">Techolution · Full-time</p>
+              <p class="job__meta">Nov 2019 — Mar 2021 · Hyderabad, Telangana, India</p>
+              <ul class="chips"><li>Angular</li><li>TypeScript</li><li>Angular Material</li><li>Bootstrap</li><li>JavaScript</li></ul>
+            </div>
+          </li>
+          <li class="job reveal">
+            <div class="job__logo"><img src="./assets/images/virtusa.png" alt="Virtusa" loading="lazy"></div>
+            <div class="job__main">
+              <div class="job__top">
+                <h3>UI Intern</h3>
+                <span class="tag tag--amber">Internship</span>
+              </div>
+              <p class="job__co">Virtusa · Internship</p>
+              <p class="job__meta">Jan 2019 — Feb 2019 · Hyderabad, Telangana, India</p>
+              <ul class="chips"><li>Angular</li><li>Bootstrap</li><li>JavaScript</li><li>CSS</li></ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section class="section" id="skills">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Skills</p>
+          <h2>Everything needed to ship a front end, end to end</h2>
+          <p>From component architecture to design systems — one connected toolbox.</p>
+        </header>
+
+        <div class="cards cards--4">
+          <article class="card reveal">
+            <span class="ico ico--blue"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6l-6 6 6 6M16 6l6 6-6 6"/></svg></span>
+            <h3>Languages</h3>
+            <p class="card__sub">The foundations</p>
+            <ul class="dots"><li>TypeScript</li><li>JavaScript (ES2015+)</li><li>Semantic HTML</li><li>Modern CSS</li></ul>
+          </article>
+          <article class="card reveal">
+            <span class="ico ico--green"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 5-9 5-9-5 9-5z"/><path d="M3 12l9 5 9-5M3 17l9 5 9-5"/></svg></span>
+            <h3>Frameworks</h3>
+            <p class="card__sub">Reactive applications</p>
+            <ul class="dots"><li>Angular</li><li>RxJS</li><li>NgRx state management</li><li>React</li></ul>
+          </article>
+          <article class="card reveal">
+            <span class="ico ico--violet"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="13.5" r="2.5"/><circle cx="8.5" cy="9.5" r="2.5"/><path d="M12 22a10 10 0 1 1 10-10c0 2-2 3-4 3h-2a2 2 0 0 0-1 3.7A2 2 0 0 1 12 22z"/></svg></span>
+            <h3>UI &amp; styling</h3>
+            <p class="card__sub">Design systems</p>
+            <ul class="dots"><li>Tailwind CSS</li><li>Angular Material</li><li>Bootstrap</li><li>Responsive, accessible UI</li></ul>
+          </article>
+          <article class="card reveal">
+            <span class="ico ico--amber"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></span>
+            <h3>Architecture</h3>
+            <p class="card__sub">At scale</p>
+            <ul class="dots"><li>Nx monorepos</li><li>Form.io form engines</li><li>No-code platforms</li><li>Component libraries</li></ul>
+          </article>
+        </div>
+
+        <div class="cards cards--feature">
+          <article class="card card--dark reveal">
+            <span class="ico ico--glass"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.8L20 10l-6.1 1.2L12 17l-1.9-5.8L4 10l6.1-1.2z"/></svg></span>
+            <div class="feature">
+              <div>
+                <h3>Angular, end to end</h3>
+                <p>My core craft since 2019 — component architecture, reactive state with RxJS &amp; NgRx, Angular Material design systems and large Nx monorepos.</p>
+              </div>
+              <div class="meter-card">
+                <p class="meter-card__q">How strong is the frontend stack?</p>
+                <div class="meter"><span>Angular</span><b>95%</b><i style="--v:95%"></i></div>
+                <div class="meter"><span>TypeScript / JavaScript</span><b>92%</b><i style="--v:92%"></i></div>
+                <div class="meter"><span>RxJS &amp; NgRx</span><b>88%</b><i style="--v:88%"></i></div>
+                <div class="meter"><span>Tailwind / Material UI</span><b>90%</b><i style="--v:90%"></i></div>
+              </div>
+            </div>
+          </article>
+          <article class="card reveal">
+            <span class="ico ico--rose"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></span>
+            <h3>How I work</h3>
+            <p class="card__sub">What teams say about me</p>
+            <ul class="dots"><li>Leading frontend delivery at eReInsure</li><li>Complete ownership of what's assigned</li><li>Quick learner, quicker to deliver</li><li>Clear client communication</li><li>Pixel-perfect UI/UX instincts</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EDUCATION ================= -->
+    <section class="section section--tint" id="education">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Education &amp; certifications</p>
+          <h2>Always levelling up</h2>
+          <p>Formal study alongside hands-on certifications.</p>
+        </header>
+        <div class="edu">
+          <article class="card card--uni reveal">
+            <span class="ico ico--blue"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg></span>
+            <span class="tag tag--blue">2025 — 2027</span>
+            <h3>Liverpool John Moores University</h3>
+            <p class="card__sub">Research and Thesis</p>
+          </article>
+          <div class="certs">
+            <div class="cert reveal"><span class="ico ico--sm ico--cyan">⚛</span><div><strong>React JS in Depth</strong><small>NamasteDev.com</small></div><span class="tag">Mar 2024</span></div>
+            <div class="cert reveal"><span class="ico ico--sm ico--green">✓</span><div><strong>Uplers Certified Frontend Developer</strong><small>Uplers</small></div><span class="tag">Sep 2021</span></div>
+            <div class="cert reveal"><span class="ico ico--sm ico--amber">JS</span><div><strong>Advanced JavaScript</strong><small>upGrad · ID 31186964</small></div><span class="tag">Apr 2021</span></div>
+            <div class="cert reveal"><span class="ico ico--sm ico--rose">⛨</span><div><strong>Cyber Security Foundation Professional Certificate</strong><small>CertiProf · ID 54516095</small></div><span class="tag">Jan 2021</span></div>
+            <div class="cert reveal"><span class="ico ico--sm ico--violet">▣</span><div><strong>The Complete Android Developer Course</strong><small>Udemy · UC-I1LWFW4O</small></div><span class="tag">May 2019</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TESTIMONIALS ================= -->
+    <section class="section" id="testimonials">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Testimonials</p>
+          <h2>My team loves me</h2>
+          <p>Recommended by 8+ professionals on LinkedIn. Hover to pause.</p>
+        </header>
+      </div>
+
+      <div class="marquee">
+        <div class="marquee__track">
+          <figure class="quote"><blockquote>Finding developers with the talent of Deekshith is extremely difficult. He has worked on numerous projects for our organization and is an expert in front-end technologies notably Angular, JavaScript, and CSS. Deekshith would be an asset to any team.</blockquote>
+            <figcaption><a href="https://www.linkedin.com/in/n4ndhu/" target="_blank" rel="noopener"><span class="av av--blue">NS</span><span><strong>Nandhu Sasidharan</strong><small>Senior Engineering Manager</small></span></a></figcaption></figure>
+          <figure class="quote"><blockquote>Deekshith worked as a UI engineer for our product and has been consistently our best performer. His “can do” attitude made life very easy for a PM like myself. His mature attitude, client comm skills, and technical capabilities are noteworthy.</blockquote>
+            <figcaption><a href="https://www.linkedin.com/in/atinavbajaj/" target="_blank" rel="noopener"><span class="av av--green">AB</span><span><strong>Atinav Bajaj</strong><small>Senior Product Manager</small></span></a></figcaption></figure>
+          <figure class="quote"><blockquote>Deekshith is a hardworking, inquisitive and flexible team player, keen to learn new things and is quite quick in picking things up and even quicker in delivering. In the project Deekshith was with me he single handedly managed the front end.</blockquote>
+            <figcaption><a href="https://www.linkedin.com/in/sasank-suresh-5b409061/" target="_blank" rel="noopener"><span class="av av--violet">SS</span><span><strong>Sasank Suresh</strong><small>Product Manager</small></span></a></figcaption></figure>
+          <figure class="quote"><blockquote>Deekshith Raj Basa is an young &amp; ambitious developer with whom have worked in Open Financial. He is very good with developing front end applications &amp; takes complete responsibility of what's assigned to him.</blockquote>
+            <figcaption><a href="https://www.linkedin.com/in/sunil-kumar-k-8b1b72a/" target="_blank" rel="noopener"><span class="av av--amber">SK</span><span><strong>Sunil Kumar K</strong><small>Director — Projects</small></span></a></figcaption></figure>
+        </div>
+      </div>
+      <div class="marquee marquee--reverse">
+        <div class="marquee__track">
+          <figure class="quote"><blockquote>Deekshith displayed a knack for problem solving from beginning. He is a quick learner and always tries to work out problems with elegant solutions. He takes complete accountability for all tasks assigned to him.</blockquote>
+            <figcaption><a href="https://www.linkedin.com/in/lakshit-singh-rawat-494a4712b/" target="_blank" rel="noopener"><span class="av av--rose">LR</span><span><strong>Lakshit Singh Rawat</strong><small>Senior Software Engineer</small></span></a></figcaption></figure>
+          <figure class="quote"><blockquote>Deekshith multitasking ability was unlike I’ve seen before and made an applause. He joined my team as a fresher but he learned the things very quickly and handle project single handed.</blockquote>
+            <figcaption><a href="https://www.linkedin.com/in/vivekguptaui/" target="_blank" rel="noopener"><span class="av av--cyan">VG</span><span><strong>Vivek Gupta</strong><small>UI Architect</small></span></a></figcaption></figure>
+          <figure class="quote"><blockquote>Working with Deekshith has been a cakewalk for me. He carries the enthusiasm to learn quickly and implement whatever he learns. He has the zeal to upgrade his knowledge constantly.</blockquote>
+            <figcaption><a href="https://www.linkedin.com/in/naveen-adiraju/" target="_blank" rel="noopener"><span class="av av--blue">NA</span><span><strong>Naveen Adiraju</strong><small>Program Manager</small></span></a></figcaption></figure>
+          <figure class="quote"><blockquote>A strong, hardworking and a dedicated person I've ever come across. He is exceptional at UI/UX designs. We worked in a same project at Virtusa &amp; he never failed to surprise me with his code.</blockquote>
+            <figcaption><a href="https://www.linkedin.com/in/pavan-aditya-989289181/" target="_blank" rel="noopener"><span class="av av--green">PA</span><span><strong>Pavan Aditya</strong><small>Senior Software Engineer</small></span></a></figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section section--tint" id="contact">
+      <div class="container">
+        <div class="contact reveal">
+          <div class="contact__intro">
+            <p class="eyebrow eyebrow--light">Contact</p>
+            <h2>Have a role or a project? Let's talk.</h2>
+            <p>Drop a message and I'll get back to you — or connect with me on LinkedIn.</p>
+            <ul class="checks checks--light">
+              <li><svg width="16" height="16"><use href="#i-check"/></svg>Tech lead &amp; senior frontend roles</li>
+              <li><svg width="16" height="16"><use href="#i-check"/></svg>Angular architecture &amp; UI engineering</li>
+              <li><svg width="16" height="16"><use href="#i-check"/></svg>Design systems &amp; component libraries</li>
+            </ul>
+            <a class="btn btn--white" href="https://www.linkedin.com/in/deekshith-raj-basa/" target="_blank" rel="noopener">Connect on LinkedIn <svg width="18" height="18"><use href="#i-arrow"/></svg></a>
+          </div>
+          <form class="form" id="contactForm" action="https://formspree.io/f/moqzzydg" method="POST">
+            <div class="form__row">
+              <label>First name<input type="text" name="first-name" autocomplete="given-name" required></label>
+              <label>Last name<input type="text" name="last-name" autocomplete="family-name"></label>
+            </div>
+            <div class="form__row">
+              <label>Email<input type="email" name="email" autocomplete="email" required></label>
+              <label>Phone number<input type="tel" name="phone-number" autocomplete="tel"></label>
+            </div>
+            <label>Company<input type="text" name="company" autocomplete="organization"></label>
+            <label>Message<textarea name="message" rows="4" required></textarea></label>
+            <button class="btn btn--primary btn--block" type="submit">Let's talk <svg width="18" height="18"><use href="#i-arrow"/></svg></button>
+            <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#top" class="brand brand--light" aria-label="Deekshith Raj Basa — back to top">
+        <span class="brand__mark"><svg><use href="#logo"/></svg></span>
+        <svg class="brand__word" aria-hidden="true"><use href="#wordmark"/></svg>
+      </a>
+      <nav class="footer__links" aria-label="Footer">
+        <a href="#work">Experience</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#testimonials">Testimonials</a><a href="brand.html">Brand &amp; palette</a><a href="https://www.linkedin.com/in/deekshith-raj-basa/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </nav>
+      <p class="footer__copy">© <span id="year">2026</span> Deekshith Raj Basa · Hyderabad, India · <span id="localTime">IST</span></p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
